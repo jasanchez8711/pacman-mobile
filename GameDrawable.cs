@@ -50,7 +50,7 @@ public sealed class GameDrawable(GameEngine game) : IDrawable
             canvas.FillRectangle(offsetX, offsetY, boardWidth, boardHeight);
             canvas.FontColor = Colors.White;
             canvas.FontSize = MathF.Max(18F, scale * 0.8F);
-            canvas.Font = new Font("Arial", FontWeight.Bold);
+            canvas.Font = new Microsoft.Maui.Graphics.Font("Arial", FontWeight.Bold);
             canvas.DrawString(message, offsetX, offsetY, boardWidth, boardHeight,
                 HorizontalAlignment.Center, VerticalAlignment.Center);
         }
